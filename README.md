@@ -28,7 +28,10 @@ around the art, not in place of it.
    with alpha and becomes a Moho image layer, or a switch layer of angles a
    score can turn by name. No 3D shots. Shaders are written in OSL so they
    move between renderers.
-6. **Let the repo be the shared memory.** Chat, cloud and local sessions never
+6. **Build a library and reuse it.** An environment drawn once serves several
+   scenes, props recur, and tileable textures keep greenery varied without
+   redrawing it. Shots point at library items instead of copying them.
+7. **Let the repo be the shared memory.** Chat, cloud and local sessions never
    run together and do not share context. Tickets and handoff entries in the
    repo are how one picks up where another stopped.
 
@@ -66,13 +69,13 @@ Not yet tested, because Moho and Maya cannot run in the cloud:
 Those three are the first tickets. Until the first one passes, the animation
 lane is a strong lead, not a fact.
 
-## Things to decide before building further
+## Things worth knowing before building further
 
-**The 3D tools are licensed for study, not for a monetized channel.** Maya and
-Arnold under an educational license, and RenderMan Non-Commercial, do not
-cover content that earns money, and one rendered prop in a monetized video
-counts. Blender does, for free. With 3D this occasional the stakes are low and
-nothing is blocked until the first asset is needed. See ticket T-0004.
+**Channel work is done under the personal licenses.** The artist's own machine
+has paid licenses. The school's machines and the student account are
+educational, and educational licenses do not cover content that earns money.
+So anything for the channel is made at home under the personal account. One
+edition is still to confirm: RenderMan's free edition is non-commercial.
 
 **"Organic" is about the look; YouTube judges something else.** Organic here
 means a 2D, hand-made feel, which is why the show stays in Moho. Separately,
@@ -94,7 +97,7 @@ fix a pose by hand. Keep about ten master dials on top.
     SKILL.md                         ground rules, stages, tool usage, what is verified
     scripts/moho_project.py          inspect a rig, apply a score
     scripts/voice.py                 lines to audio, timing and lip-sync
-    references/                      Moho format, HyperRigs, voice, 3D, publishing, collaboration
+    references/                      Moho format, HyperRigs, assets, voice, 3D, publishing, collaboration
     examples/                        sample lines.json and score.json
 CLAUDE.md                            what a session does first and last
 pipeline/README.md                   standing decisions and open questions

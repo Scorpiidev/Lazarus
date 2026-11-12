@@ -42,23 +42,26 @@ Making it sit in a 2D frame:
   it without softening.
 - Keep the same angle set and framing for every prop, so they swap cleanly.
 
-## The license question, at this scale
+## Which license the work is done under
 
-The user's Maya, Arnold and RenderMan are student or non-commercial licenses.
-A monetized channel is commercial use, and that holds for one small prop in a
-monetized video as much as for a whole shot.
+The user's own machine has paid licenses, not educational ones. Her school's
+machines, and the student account she occasionally signs into at home, are
+educational. A monetized channel is commercial use, so assets for the channel
+are made under the personal licenses, and anything built or rendered while
+signed into the student account stays out of monetized videos.
 
-| Route | Cost | Fit |
-|---|---|---|
-| Render channel assets in Blender | Free, GPL, output is unrestricted | Default recommendation. At a few props per episode this is little work |
-| Maya Indie | Roughly USD 300 a year where offered; revenue under USD 100k; not sold in every country | Hard to justify for occasional props |
-| Maya and RenderMan non-commercial | Free | Learning, look development, portfolio, anything not monetized |
+Before starting a 3D job in a local session, check which account the
+application is signed into. If it is the student one, stop and tell the user.
 
-Because 3D is occasional, this blocks nothing until the first asset is
-needed. The choice is the user's (ticket T-0004). Until then, keep the work
-portable: geometry as USD, glTF or OBJ, shaders in OSL.
+Still to confirm: which RenderMan edition is installed at home. RenderMan's
+free edition is non-commercial; if that is the one, channel renders go
+through Arnold or Blender.
 
-Details and the other tools' terms: `references/publishing.md`.
+Keeping work portable is worthwhile regardless (geometry as USD, glTF or OBJ,
+shaders in OSL): the school runs a newer Maya than the home machine, and it
+lets an asset move between renderers.
+
+License terms by type: `references/publishing.md`.
 
 ## Shaders
 

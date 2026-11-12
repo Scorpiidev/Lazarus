@@ -10,24 +10,33 @@ quote nothing from here as policy text. Sources are in
 A monetized channel is commercial use. Before a tool's output goes into a
 published video, its license has to allow that.
 
-| Tool | Status for a monetized channel |
+Which licenses are in play, as the user described them on 2026-11-12: her own
+machine has paid licenses, not educational ones. Her school's machines, and
+the student account she occasionally signs into at home, are educational.
+
+So the working rule is about where the work is done, not which tool: assets
+for the channel are made under the personal licenses. Anything built or
+rendered while signed into the student account stays out of monetized videos.
+
+| License or tool | Status for a monetized channel |
 |---|---|
-| Maya, Arnold (educational license) | Not allowed. Educational licenses cover learning, training and research |
-| Maya Indie | Allowed. Roughly USD 300 a year, revenue under USD 100k, not offered in every country |
-| RenderMan Non-Commercial | Not allowed. Described as for personal projects, research and tool development |
-| Toon Boom Harmony, ZBrush, Nuke (student or non-commercial) | Assume not allowed until each agreement is read |
-| Moho Pro 14 | Perpetual paid license. Commercial-use wording was not found; check the agreement, especially for an educational copy |
+| Paid commercial license or subscription | Allowed |
+| Indie editions (for example Maya Indie) | Allowed, within a revenue cap (USD 100k for Maya Indie) |
+| Educational or student license | Not allowed. Covers learning, training and research |
+| Non-commercial editions (RenderMan's free edition, Nuke Non-commercial) | Not allowed |
+| Moho Pro 14 | Perpetual paid license. Commercial-use wording was not found in research; nothing suggests a restriction |
 | Blender | Allowed. GPL covers the program; what it renders belongs to the artist |
 | Krita | Allowed, same reasoning |
 | Rhubarb Lip Sync | Allowed. MIT; its license says the output belongs to the user |
 | Kokoro TTS | Allowed. Apache 2.0 |
 | ffmpeg | Allowed |
 
-The honest summary: the 2D lane is clean today, and it is most of the show.
-The 3D tools as currently licensed are fine for learning and portfolio work
-and not for the channel, which covers a single rendered prop as much as a
-whole shot. Since 3D is occasional, this blocks nothing until the first asset
-is needed. See `references/3d-lane.md` for the routes.
+Still to confirm: which RenderMan edition is installed at home, since its
+free edition is the non-commercial one.
+
+An earlier version of this file assumed the user's tools were student
+licenses because she is a student. That was wrong, and nothing here should be
+read as saying her personal tools cannot be used for the channel.
 
 ## Asset provenance
 

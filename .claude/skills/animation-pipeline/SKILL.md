@@ -80,6 +80,7 @@ Layout, created as needed rather than up front:
 ```
 shows/<show>/bible.md                      premise, tone, style rules, themes
 shows/<show>/assets/manifest.json          author, license, source for every asset
+shows/<show>/assets/{environments,props,textures}/   the reusable library
 shows/<show>/rigs/<character>/             rig.moho, rig.json, semantics.json
 shows/<show>/episodes/<ep>/script.md
 shows/<show>/episodes/<ep>/shots/<shot>/   lines.json, audio, score.json, anim.moho, review.md
@@ -217,6 +218,7 @@ Full protocol, lanes and ticket format: `references/collaboration.md`.
 
 - `references/moho-format.md`: the project JSON, channels, interpolation codes, smart bones, switches, Lua scripting notes
 - `references/hyperrig.md`: designing rigs for a machine animator; manifest, semantics layer, review loop
+- `references/assets.md`: the reusable library of environments, props and tileable textures; reference layers; seam checking
 - `references/voice.md`: TTS choices and licenses, Rhubarb, mouth-shape sets
 - `references/3d-lane.md`: Maya, Blender, RenderMan, stylized shading, getting 3D into the 2D comp
 - `references/publishing.md`: license gate, YouTube monetization rules, upload and analytics

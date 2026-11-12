@@ -47,6 +47,11 @@ Types seen or documented: `BoneLayer`, `GroupLayer`, `SwitchLayer`,
 A `SwitchLayer` adds `switch_keys`: a String channel whose value at each key is
 the name of the child layer to show.
 
+Every layer also carries `layer_ref_uuid`, `layer_ref_path`,
+`layer_ref_fileref`, `layer_ref_same_doc` and `layer_ref_mod_date`. These are
+empty in the sample and are how a reference layer points at a layer in the
+same or another document. See `references/assets.md`.
+
 ## Bones
 
 `BoneLayer.skeleton.bones` is a list. A bone has `name`, `parent` (index, -1
