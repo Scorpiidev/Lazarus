@@ -23,9 +23,11 @@ published video, its license has to allow that.
 | Kokoro TTS | Allowed. Apache 2.0 |
 | ffmpeg | Allowed |
 
-The honest summary: the 2D lane is clean today. The 3D lane as currently
-licensed is fine for learning and portfolio work and not for the channel. See
-`references/3d-lane.md` for the routes.
+The honest summary: the 2D lane is clean today, and it is most of the show.
+The 3D tools as currently licensed are fine for learning and portfolio work
+and not for the channel, which covers a single rendered prop as much as a
+whole shot. Since 3D is occasional, this blocks nothing until the first asset
+is needed. See `references/3d-lane.md` for the routes.
 
 ## Asset provenance
 
@@ -60,10 +62,12 @@ the channel as a whole, not one video.
 
 What that means for this project:
 
-- **Do not aim to look organic. Be authored.** The user's own artwork, a
-  script she wrote or reshaped, and episodes that differ from one another are
-  what the policy protects. Trying to disguise automation is the wrong goal
-  and the riskier one.
+- **The 2D look is a style choice; authorship is what the policy checks.**
+  "Organic" is the user's word for a hand-made, 2D feel, and it is why the
+  show stays in Moho. That is about how it looks. What the policy protects is
+  separate: her own artwork, a script she wrote or reshaped, and episodes that
+  differ from one another. Neither goal involves disguising that assistants
+  did the labor, and nothing in the pipeline should try to.
 - **Sameness is the hazard.** A fully automatic channel drifts toward one
   layout, one voice, one rhythm. Vary structure between episodes on purpose.
   The HyperRig idea helps here: range is what templated channels lack.

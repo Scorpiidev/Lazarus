@@ -19,8 +19,9 @@ The art is human-made (the user's own, or CC0). Assistants do the labor around
 it: rigging, keyframing, voice, lip-sync, assembly, reporting. The user directs
 and has the final say on anything a viewer sees.
 
-Characters live in Moho. 3D sets and props come from Maya or Blender. Dialogue
-audio sets the timing. Everything an assistant produces is a file in the repo,
+The show is made in Moho and should read as 2D and hand-made. 3D is
+occasional: a small asset rendered with a shader in Maya or Blender and
+brought into Moho as an image. Dialogue audio sets the timing. Everything an assistant produces is a file in the repo,
 so the next instance can pick it up without the conversation.
 
 ## Ground rules
@@ -70,7 +71,7 @@ This skill does not repeat it.
 | 3 | Voice and timing | `<id>.wav`, `sequence.wav`, `<speaker>.dat`, `timing.json` | `scripts/voice.py` |
 | 4 | Rig | `rig.moho`, `rig.json` (manifest), `semantics.json` | `references/hyperrig.md` |
 | 5 | Animation | `score.json`, `anim.moho`, contact sheet, `review.md` | `references/moho-format.md` |
-| 6 | 3D plates and shaders | image sequences, shader source | `references/3d-lane.md` |
+| 6 | Occasional 3D asset | PNG renders with alpha for Moho, shader source | `references/3d-lane.md` |
 | 7 | Assembly | final video, subtitles | ffmpeg |
 | 8 | Publish and report | metadata, upload, analytics retro | `references/publishing.md` |
 

@@ -22,7 +22,7 @@ ticket; it is not a permanent identity.
 | voice | Audio and timing | wavs, `sequence.wav`, `.dat`, `timing.json` | Cloud |
 | rig | Builds and documents rigs | `rig.moho`, `rig.json`, `semantics.json`, calisthenics sheet | Local for building, cloud for manifests |
 | anim | Scores and revisions | `score.json`, `anim.moho`, `review.md` | Cloud writes, local renders |
-| look | 3D plates and shaders | Image sequences, shader source | Local |
+| look | Occasional 3D assets and their shaders | PNG renders with alpha, shader source | Local |
 | post | Assembly, subtitles, encode | Final video | Cloud |
 | insight | Trends and channel analytics | Dated report with evidence | Cloud or chat |
 

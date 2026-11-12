@@ -139,6 +139,10 @@ never keep track of on a timeline and a score can address by name. Rule of
 thumb: use a switch where the drawing changes and a bone or smart bone where
 it deforms.
 
+The occasional 3D-rendered prop fits the same pattern: render it from a fixed
+set of angles and make each render a switch child named for its angle. See
+`references/3d-lane.md`.
+
 Lip-sync data targets one switch layer. With nested emotion sets, either point
 the `.dat` at the active emotion's viseme switch, or have the assistant write
 the viseme keys from `timing.json` cues into the score instead. The second

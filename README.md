@@ -1,11 +1,13 @@
 # Animation pipeline
 
 A working plan and first tools for a small animation studio run by one artist
-with assistant sessions doing the labor: 2D characters in Moho Pro 14, 3D in
-Maya or Blender, synthetic or recorded voice, automated lip-sync and assembly,
-published to YouTube.
+with assistant sessions doing the labor: a 2D show made in Moho Pro 14,
+synthetic or recorded voice, automated lip-sync and assembly, published to
+YouTube. 3D is occasional: a small asset rendered with a shader in Maya or
+Blender and dropped into Moho as an image.
 
-The art is human-made. The automation goes around it.
+The art is human-made and the result should look it. The automation goes
+around the art, not in place of it.
 
 ## The approach in short
 
@@ -22,8 +24,10 @@ The art is human-made. The automation goes around it.
 4. **Close the loop with pictures.** A model cannot see motion while keying.
    Rendered frames tiled into a contact sheet are how it checks its own work
    before the director looks.
-5. **Keep 3D package-neutral.** 3D output is an image sequence with alpha.
-   Shaders are written in OSL so they move between renderers.
+5. **Keep 3D small and in service of the 2D.** A 3D asset is rendered as PNG
+   with alpha and becomes a Moho image layer, or a switch layer of angles a
+   score can turn by name. No 3D shots. Shaders are written in OSL so they
+   move between renderers.
 6. **Let the repo be the shared memory.** Chat, cloud and local sessions never
    run together and do not share context. Tickets and handoff entries in the
    repo are how one picks up where another stopped.
@@ -34,9 +38,9 @@ The art is human-made. The automation goes around it.
                                    rig.moho ─► score.json ─► anim.moho ─► render ─► contact sheet
                                    rig.json        ▲                                    │
                                    semantics.json  └──────────── review ◄───────────────┘
-                                                                                        ▼
-                          3D plates (Maya/Blender, OSL) ──────────────────────► assembly (ffmpeg)
-                                                                                        ▼
+                                       ▲                                                ▼
+ occasional 3D asset ──► PNG ──► Moho image or switch layer                     assembly (ffmpeg)
+ (Maya/Blender, OSL shader)                                                             ▼
                                                                           publish ──► analytics ──► insight
 ```
 
@@ -66,15 +70,17 @@ lane is a strong lead, not a fact.
 
 **The 3D tools are licensed for study, not for a monetized channel.** Maya and
 Arnold under an educational license, and RenderMan Non-Commercial, do not
-cover content that earns money. Blender does, for free. Maya Indie is the paid
-route. The 2D lane has no such problem. See ticket T-0004.
+cover content that earns money, and one rendered prop in a monetized video
+counts. Blender does, for free. With 3D this occasional the stakes are low and
+nothing is blocked until the first asset is needed. See ticket T-0004.
 
-**"Organic looking" is the wrong target.** YouTube's monetization rules cut
-off channels that are generic, repetitive or template-based, judged across the
-whole channel. They do not ban AI assistance or synthetic voices. What
-protects the channel is that it is authored: original art, a script with a
-point of view, episodes that differ. Aim for that and the look follows.
-Disguising automation is both harder and riskier.
+**"Organic" is about the look; YouTube judges something else.** Organic here
+means a 2D, hand-made feel, which is why the show stays in Moho. Separately,
+YouTube's monetization rules cut off channels that are generic, repetitive or
+template-based, judged across the whole channel. They do not ban AI assistance
+or synthetic voices. What protects the channel is that it is authored:
+original art, a script with a point of view, episodes that differ. The two
+goals pull the same way, and neither involves disguising how it was made.
 
 **Rigs no human can animate should still have a human handle.** The HyperRig
 idea is sound: a model does not pay the attention cost that keeps human rigs
@@ -108,8 +114,8 @@ proven yet. It exists to flush out the unknowns, not to be published.
 4. Write a score from `timing.json`, apply it, look at it in Moho.
 5. T-0003 and T-0006: make rendering and review unattended.
 
-After that: a HyperRig for the main character, then the 3D lane, then cadence
-and analytics.
+After that: a HyperRig for the main character, then cadence and analytics. A
+3D asset gets made when a shot actually calls for one.
 
 ## Quick start
 
